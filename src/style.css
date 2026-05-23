@@ -1,0 +1,18 @@
+a {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: 0.3s;
+  display: inline-block;
+}
+
+a:hover {
+  background-color: white;
+  color: black;
+
+/*This will change the radius of the shape to be rounded*/  
+
+border-radius: 5px;
+}
