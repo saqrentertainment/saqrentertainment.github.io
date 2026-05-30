@@ -1,32 +1,32 @@
-a {
-
-  color: white;
-
-  font-family: 'Montserrat', sans-serif;
-
-  font-weight: bold;
-
-  text-decoration: none;
-
-  padding: 10px 15px;
-
-  transition: 0.3s;
-
+.logo-link {
+  padding: 0;
+  background: none;
   display: inline-block;
-
 }
 
-a:hover {
+.logo-link:hover {
+  background: none;
+  border-radius: 0;
+}
 
-  background-color: white;
+.logo-link img {
+  display: block;
+  height: auto;
+}
 
+nav a {
   color: black;
-
-  /* This will change the radius of the shape to be rounded */
-
-  border-radius: 5px;
-
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 15px;
+  margin: 0 10px;
+  transition: 0.3s;
+  display: inline-block;
 }
 
-
-
+nav a:hover {
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+}
