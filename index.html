@@ -21,88 +21,8 @@
 
 <!--  header -->
 
-<header class="bg-white border-bottom border-2 border-dark py-2">
-
-  <nav class="navbar navbar-expand-lg bg-white py-2">
-    <div class="container">
-
-      <!-- Logo -->
-      <a class="navbar-brand" href="index.html">
-        <img
-          src="images/logo.png"
-          class="img-fluid"
-          alt="Saqr Entertainment Logo"
-          width="500">
-      </a>
-
-      <!-- Mobile Menu Button -->
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#collapsibleNavbar"
-        aria-controls="collapsibleNavbar"
-        aria-expanded="false"
-        aria-label="Toggle navigation">
-
-        <span class="navbar-toggler-icon"></span>
-
-      </button>
-
-      <!-- Navigation Links -->
-      <div
-        class="collapse navbar-collapse justify-content-end"
-        id="collapsibleNavbar">
-
-        <ul class="navbar-nav">
-
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">
-              Home
-            </a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">
-              About Us
-            </a>
-          </li>
-
-
-
-<li class="nav-item dropdown">
-  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Games</a>
-  <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="#">Coming Soon</a></li>
-    
-  </ul>
-</li>
-
-
-
-
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">
-              Contact
-            </a>
-          </li>
-
-
-
-
-        </ul>
-
-
-
-
-      </div>
-
-    </div>
-  </nav>
-
-</header>
-
-
+ <div id="header"></div>
+ 
 <!--  main -->
 <main>
 
@@ -158,10 +78,19 @@
 </main>
 
 <!--  footer -->
-<footer class="bg-black text-white text-center py-4">
-  <small>© 2026 Saqr Entertainment. All rights reserved.</small>
-</footer>
 
+
+<div id="footer"></div>
+
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<script>
+$(function () {
+    $("#header").load("header.html");
+    $("#footer").load("footer.html");
+});
+</script>
 
 </body>
 
