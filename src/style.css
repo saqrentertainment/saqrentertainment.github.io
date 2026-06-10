@@ -1,32 +1,14 @@
-.logo-link {
-  padding: 0;
-  background: none;
-  display: inline-block;
+.nav-link {
+    color: black;
+    font-weight: bold;
+    margin-left: 25px;
 }
 
-.logo-link:hover {
-  background: none;
-  border-radius: 0;
+.nav-link:hover,
+.nav-link:focus {
+    color: black;
 }
 
-.logo-link img {
-  display: block;
-  height: auto;
-}
-
-nav a {
-  color: black;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
-  text-decoration: none;
-  padding: 10px 15px;
-  margin: 0 10px;
-  transition: 0.3s;
-  display: inline-block;
-}
-
-nav a:hover {
-  background-color: black;
-  color: white;
-  border-radius: 5px;
+.navbar-toggler:focus {
+    box-shadow: none;
 }

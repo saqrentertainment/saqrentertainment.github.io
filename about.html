@@ -7,11 +7,12 @@
 
   <link href="src/bootstrap.css" rel="stylesheet">
   
-   
   <link href="src/style.css" rel="stylesheet" >
 
 
 <script src="src/jquery.js"></script>
+
+<script src="src/bootstrap5.js"></script>
 
 </head>
 
@@ -19,22 +20,67 @@
 <body class="bg-secondary-subtle">
 
 <!--  header -->
+
 <header class="bg-white border-bottom border-2 border-dark py-2">
-  <div class="container d-flex justify-content-between align-items-center">
 
-    <a href="index.html" class="logo-link">
-      <img src="images/logo.png" class="img-fluid" alt="Saqr Entertainment Logo" width="500">
-    </a>
+  <nav class="navbar navbar-expand-lg bg-white py-2">
+    <div class="container">
 
+      <!-- Logo -->
+      <a class="navbar-brand" href="index.html">
+        <img
+          src="images/logo.png"
+          class="img-fluid"
+          alt="Saqr Entertainment Logo"
+          width="500">
+      </a>
 
+      <!-- Mobile Menu Button -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#collapsibleNavbar"
+        aria-controls="collapsibleNavbar"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
 
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About Us</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+        <span class="navbar-toggler-icon"></span>
 
-  </div>
+      </button>
+
+      <!-- Navigation Links -->
+      <div
+        class="collapse navbar-collapse justify-content-end"
+        id="collapsibleNavbar">
+
+        <ul class="navbar-nav">
+
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              Home
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">
+              About Us
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">
+              Contact
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+  </nav>
+
 </header>
 
 
