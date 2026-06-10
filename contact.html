@@ -108,16 +108,17 @@ We’ll respond to your message as soon as possible.
 <div id="footer"></div>
 
 
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-
 <script>
 $(function () {
-    $("#header").load("header.html");
-    $("#footer").load("footer.html", function () {
-        $("#content").show();
+    $.when(
+        $("#header").load("header.html"),
+        $("#footer").load("footer.html")
+    ).done(function () {
+        $("#content").fadeIn(100);
     });
 });
 </script>
+
 
 </body>
 
