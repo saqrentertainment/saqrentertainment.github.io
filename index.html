@@ -1,117 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <title>Saqr Entertainment</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Saqr Entertainment</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link href="src/bootstrap.css" rel="stylesheet">
-  
-  <link href="src/style.css" rel="stylesheet" >
+    <link href="src/bootstrap.css" rel="stylesheet">
+    <link href="src/style.css" rel="stylesheet">
 
+    <script src="src/jquery.js"></script>
+    <script src="src/bootstrap5.js"></script>
+</head>
 
-<script src="src/jquery.js"></script>
+<body class="bg-secondary-subtle">
 
-<script src="src/bootstrap5.js"></script>
+    <!-- Header -->
+    <div id="header"></div>
 
+    <!-- Main Content -->
+    <div id="content" style="display:none;">
 
-<script>
-$(document).ready(function () {
+        <main>
 
-    $("#header").load("header.html", function () {
+            <section class="container bg-dark text-white text-center py-5">
+                <div class="container py-5">
 
-        $("#footer").load("footer.html", function () {
+                    <h1 class="display-1 fw-bold">
+                        Independent Game Studio
+                    </h1>
 
-            $("#content").show();
+                    <p class="lead">
+                        Developing games, animation, and interactive experiences through creativity and technology.
+                    </p>
+
+                </div>
+            </section>
+
+            <section class="container bg-white py-5 text-center">
+
+                <h2 class="fw-bold">
+                    Featured Project
+                </h2>
+
+                <p class="lead">
+                    Broken Education — a cinematic interactive experience about education, morality, and technology.
+                </p>
+
+            </section>
+
+            <section class="container bg-white py-5">
+
+                <h2 class="fw-bold text-center mb-4">
+                    Our Focus
+                </h2>
+
+                <div class="row text-center">
+
+                    <div class="col-md-4">
+                        <h3>Games</h3>
+                        <p>Gameplay systems, worlds, and interactive experiences.</p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <h3>Animation</h3>
+                        <p>Cinematic visuals, characters, and storytelling.</p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <h3>Technology</h3>
+                        <p>Real-time engines, software, and immersive media.</p>
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <script>
+    $(document).ready(function () {
+
+        $("#header").load("header.html", function () {
+
+            $("#footer").load("footer.html", function () {
+
+                $("#content").show();
+
+            });
 
         });
 
     });
-
-});
-</script>
-
-
-</head>
-
-<!--  Body -->
-<body class="bg-secondary-subtle">
-
-<!--  header -->
-
- <div id="header"></div>
- 
-<!--  main -->
-
-<div id="content" style="display:none;">
-    <!-- page content -->
-
-
-<main>
-
-
-
-
-
-  <section class="container bg-dark text-white text-center py-5">
-    <div class="container py-5">
-      <h1 class="display-1 fw-bold">Independent Game Studio</h1>
-      <p class="lead">
-        Developing games, animation, and interactive experiences through creativity and technology.
-      </p>
-	  <!--
-      <a href="games.html" class="btn btn-light mt-3">View Games</a>
-	  -->
-	  
-    </div>
-  </section>
-
-
- 
-
-  <section class="container  bg-white py-5 text-center">
-    <h2 class="fw-bold">Featured Project</h2>
-    <p class="lead">
-      Broken Education — a cinematic interactive experience about education, morality, and technology.
-    </p>
-  </section>
-
-  <section class="container bg-white py-5">
-    <h2 class="fw-bold text-center mb-4">Our Focus</h2>
-
-    <div class="row text-center">
-      <div class="col-md-4">
-        <h3>Games</h3>
-        <p>Gameplay systems, worlds, and interactive experiences.</p>
-      </div>
-
-      <div class="col-md-4">
-        <h3>Animation</h3>
-        <p>Cinematic visuals, characters, and storytelling.</p>
-      </div>
-
-      <div class="col-md-4">
-        <h3>Technology</h3>
-        <p>Real-time engines, software, and immersive media.</p>
-      </div>
-	
-    </div>
-	
-	
-	
-  </section>
-
-</main>
-</div>
-<!--  footer -->
-
-
-<div id="footer"></div>
-
-
-
+    </script>
 
 </body>
-
-
 </html>
