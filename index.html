@@ -24,7 +24,15 @@
  <div id="header"></div>
  
 <!--  main -->
+
+<div id="content" style="display:none;">
+    <!-- page content -->
+
+
 <main>
+
+
+
 
 
   <section class="container bg-dark text-white text-center py-5">
@@ -76,7 +84,7 @@
   </section>
 
 </main>
-
+</div>
 <!--  footer -->
 
 
@@ -88,7 +96,9 @@
 <script>
 $(function () {
     $("#header").load("header.html");
-    $("#footer").load("footer.html");
+    $("#footer").load("footer.html", function () {
+        $("#content").show();
+    });
 });
 </script>
 
