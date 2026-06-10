@@ -14,6 +14,24 @@
 
 <script src="src/bootstrap5.js"></script>
 
+
+<script>
+$(document).ready(function () {
+
+    $("#header").load("header.html", function () {
+
+        $("#footer").load("footer.html", function () {
+
+            $("#content").show();
+
+        });
+
+    });
+
+});
+</script>
+
+
 </head>
 
 <!--  Body -->
@@ -92,21 +110,6 @@
 
 
 
-<script>
-$(document).ready(function () {
-
-    $("#header").load("header.html", function () {
-
-        $("#footer").load("footer.html", function () {
-
-            $("#content").show();
-
-        });
-
-    });
-
-});
-</script>
 
 </body>
 
