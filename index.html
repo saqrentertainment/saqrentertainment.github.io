@@ -82,21 +82,19 @@
     <!-- Footer -->
     <div id="footer"></div>
 
-    <script>
-    $(document).ready(function () {
+   <script>
+$(function () {
 
-        $("#header").load("header.html", function () {
+    $("#header").load("header.html", function () {
 
-            $("#footer").load("footer.html", function () {
-
-                $("#content").show();
-
-            });
-
-        });
+        $("#content").show();
 
     });
-    </script>
+
+    $("#footer").load("footer.html");
+
+});
+</script>
 
 </body>
 </html>
